@@ -1,1025 +1,541 @@
-		<!DOCTYPE html>
-		<html lang="en">
-		<head>
-				<meta charset="UTF-8">
-				<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<title>Sworup | Full Stack Developer</title>
-				<meta name="description" content="Final year Software Engineering student and Full Stack Developer from Pokhara, Nepal">
-				<meta name="keywords" content="Full Stack Developer, Software Engineer, Web Developer, Nepal, Pokhara">
-				<meta name="author" content="Sworup Khadka">
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-				<link rel="stylesheet" href="style.css" />
-		</head>
-		<body>
-		<!-- Theme Toggle -->
-		<div class="theme-toggle">
-				<i class="fas fa-moon"></i>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sworup Khadka — Full Stack Developer</title>
+	<meta name="description" content="Sworup Khadka. Final-year Software Engineering student in Pokhara, Nepal, building full-stack web applications.">
+	<meta name="keywords" content="Full Stack Developer, Software Engineer, Web Developer, Nepal, Pokhara">
+	<meta name="author" content="Sworup Khadka">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress">
+	<div class="scroll-progress-bar"></div>
+</div>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" aria-label="Back to top">
+	<i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Theme Toggle -->
+<button class="theme-toggle" aria-label="Toggle dark mode">
+	<i class="fas fa-moon"></i>
+</button>
+
+<!-- Menu Toggle (mobile) -->
+<button id="menu-bars" class="fas fa-bars" aria-label="Open menu"></button>
+
+<header>
+	<div class="header-container">
+		<div class="profile-section">
+			<div class="profile-image">
+				<img src="./images/selfie.jpeg" alt="Sworup Khadka" loading="lazy">
+			</div>
+			<div class="profile-info">
+				<h1>Sworup Khadka</h1>
+				<p class="tagline">Full Stack Developer</p>
+				<div class="location">
+					<i class="fas fa-location-dot"></i>
+					<span>Pokhara, Nepal</span>
+				</div>
+				<div class="status-line">
+					<span class="status-dot"></span>
+					<span>Open to work</span>
+				</div>
+			</div>
 		</div>
 
-		<!-- Scroll Progress -->
-		<div class="scroll-progress">
-				<div class="scroll-progress-bar"></div>
+		<nav class="navbar">
+			<a class="nav-item" href="#home" data-target="home"><span class="nav-mark">01</span>Home</a>
+			<a class="nav-item" href="#about" data-target="about"><span class="nav-mark">02</span>About</a>
+			<a class="nav-item" href="#tech-stack" data-target="tech-stack"><span class="nav-mark">03</span>Stack</a>
+			<a class="nav-item" href="#education" data-target="education"><span class="nav-mark">04</span>Education</a>
+			<a class="nav-item" href="#certifications" data-target="certifications"><span class="nav-mark">05</span>Certifications</a>
+			<a class="nav-item" href="#contact" data-target="contact"><span class="nav-mark">06</span>Contact</a>
+		</nav>
+
+		<div class="social-links">
+			<a href="https://github.com/sworupkhadka" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/sworup-khadka-1b204326b/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+			<a href="https://www.facebook.com/sworup.khadka.40444/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="https://www.instagram.com/khadka_sworup/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+				<i class="fab fa-instagram"></i>
+			</a>
 		</div>
 
-		<!-- Scroll to Top -->
-		<button class="scroll-top">
-				<i class="fas fa-arrow-up"></i>
-		</button>
+		<a href="mailto:sworupkhadka1323@gmail.com" class="quick-link">
+			<i class="fas fa-envelope"></i>
+			<span>sworupkhadka1323@gmail.com</span>
+		</a>
+	</div>
+</header>
 
-		<!-- Cursor Effects -->
-		<div class="cursor-1"></div>
-		<div class="cursor-2"></div>
-
-		<!-- Menu Toggle -->
-		<div id="menu-bars" class="fas fa-bars"></div>
-
-		<!-- Floating Action Menu -->
-		<div class="fab-menu">
-				<input type="checkbox" class="fab-checkbox" id="fab-toggle">
-				<label class="fab-button" for="fab-toggle">
-						<i class="fas fa-plus"></i>
-				</label>
-				<div class="fab-actions">
-						<a href="#contact" class="fab-action" data-tooltip="Contact">
-								<i class="fas fa-envelope"></i>
-						</a>
-						<a href="https://github.com/" target="_blank" class="fab-action" data-tooltip="GitHub">
-								<i class="fab fa-github"></i>
-						</a>
-						<a href="#home" class="fab-action" data-tooltip="Home">
-								<i class="fas fa-home"></i>
-						</a>
-						<a href="#tech-stack" class="fab-action" data-tooltip="Tech Stack">
-								<i class="fas fa-code"></i>
-						</a>
-				</div>
+<main>
+	<!-- Hero Section -->
+	<section class="hero" id="home">
+		<div class="hero-content">
+			<span class="hero-eyebrow">Software Engineering, final year — Gandaki College of Engineering and Science</span>
+			<h1>Building things for the<br>web, from Pokhara.</h1>
+			<p class="hero-lede">
+				I'm Sworup — a full-stack developer who likes taking a project from a blank
+				repo to something people can actually use. Comfortable across the stack:
+				React on the front, Node or Python on the back, and whatever database the
+				problem calls for.
+			</p>
+			<div class="hero-buttons">
+				<a href="#tech-stack" class="btn-primary">
+					See what I work with
+				</a>
+				<a href="#contact" class="btn-secondary">
+					Get in touch
+				</a>
+				<a href="https://github.com/sworupkhadka" class="btn-outline" target="_blank">
+					<i class="fab fa-github"></i>
+					GitHub
+				</a>
+			</div>
 		</div>
 
-		<!-- Particle Background -->
-		<div class="particles" id="particles-js"></div>
+		<div class="ridgeline" aria-hidden="true">
+			<svg viewBox="0 0 1200 160" preserveAspectRatio="none">
+				<polyline points="0,160 90,80 160,120 230,50 300,95 380,30 460,75 540,15 620,70 700,40 780,100 860,55 940,110 1020,65 1100,120 1200,90 1200,160 0,160" />
+			</svg>
+		</div>
+	</section>
 
-		<header>
-				<div class="header-container">
-						<div class="profile-section">
-								<div class="profile-image-container">
-										<div class="profile-image">
-												<img src="./images/selfie.jpeg" alt="Sworup Khadka" loading="lazy">
-										</div>
-										<div class="profile-badge">
-												<span>Open to Opportunities</span>
-										</div>
-								</div>
-								
-								<div class="profile-info">
-										<h1>Sworup Khadka</h1>
-										<p class="tagline">Final Year Software Engineering Student</p>
-										<div class="location">
-												<i class="fas fa-map-marker-alt"></i>
-												<span>Pokhara, Nepal</span>
-										</div>
-										<div class="availability">
-												<i class="fas fa-briefcase"></i>
-												<span>Full Stack Developer</span>
-										</div>
-								</div>
-						</div>
+	<!-- About Section -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">02 — About</span>
+				<h2 class="section-title">A bit about me</h2>
+			</div>
 
-						<nav class="navbar">
-								<div class="nav-item" data-target="home">
-										<div class="nav-icon">
-												<i class="fas fa-home"></i>
-										</div>
-										<span class="nav-text">Home</span>
-								</div>
-								<div class="nav-item" data-target="about">
-										<div class="nav-icon">
-												<i class="fas fa-user"></i>
-										</div>
-										<span class="nav-text">About</span>
-								</div>
-								<div class="nav-item" data-target="tech-stack">
-										<div class="nav-icon">
-												<i class="fas fa-layer-group"></i>
-										</div>
-										<span class="nav-text">Tech Stack</span>
-								</div>
-								<div class="nav-item" data-target="education">
-										<div class="nav-icon">
-												<i class="fas fa-graduation-cap"></i>
-										</div>
-										<span class="nav-text">Education</span>
-								</div>
-								<div class="nav-item" data-target="certifications">
-										<div class="nav-icon">
-												<i class="fas fa-certificate"></i>
-										</div>
-										<span class="nav-text">Certifications</span>
-								</div>
-								<div class="nav-item" data-target="contact">
-										<div class="nav-icon">
-												<i class="fas fa-envelope"></i>
-										</div>
-										<span class="nav-text">Contact</span>
-								</div>
-						</nav>
-
-						<div class="social-links">
-								<a href="https://www.facebook.com/sworup.khadka.40444/" class="social-link" target="_blank" rel="noopener">
-										<i class="fab fa-facebook-f"></i>
-										<span class="tooltip">Facebook</span>
-								</a>
-								<a href="https://www.instagram.com/khadka_sworup/" class="social-link" target="_blank" rel="noopener">
-										<i class="fab fa-instagram"></i>
-										<span class="tooltip">Instagram</span>
-								</a>
-								<a href="https://github.com/sworupkhadka" class="social-link github-link" target="_blank" rel="noopener">
-										<i class="fab fa-github"></i>
-										<span class="tooltip">GitHub</span>
-								</a>
-								<a href="https://www.linkedin.com/in/sworup-khadka-1b204326b/" class="social-link linkedin-link" target="_blank" rel="noopener">
-										<i class="fab fa-linkedin-in"></i>
-										<span class="tooltip">LinkedIn</span>
-								</a>
-						</div>
-
-						<div class="theme-switch">
-								<div class="switch-container">
-										<span>Light</span>
-										<label class="switch">
-												<input type="checkbox" id="theme-switcher">
-												<span class="slider"></span>
-										</label>
-										<span>Dark</span>
-								</div>
-						</div>
-
-						<div class="quick-links">
-								<a href="mailto:sworupkhadka1323@gmail.com" class="quick-link">
-										<i class="fas fa-envelope"></i>
-										<span>Email Me</span>
-								</a>
-								<a href="https://github.com/sworupkhadka" class="quick-link" target="_blank">
-										<i class="fab fa-github"></i>
-										<span>View GitHub</span>
-								</a>
-						</div>
+			<div class="about-grid">
+				<div class="about-image">
+					<div class="image-frame">
+						<img src="./images/about.jpg" alt="Sworup Khadka" loading="lazy">
+					</div>
 				</div>
-		</header>
 
-		<main>
-				<!-- Hero Section -->
-				<section class="hero" id="home">
-						<div class="hero-content">
-								<div class="hero-text">
-										<div class="badge animate__animated animate__fadeInDown">
-												<i class="fas fa-laptop-code"></i>
-												<span>Full Stack Developer</span>
-										</div>
-										<h1 class="animate__animated animate__fadeInUp">
-												Hi, I'm <span class="highlight">Sworup</span>
-										</h1>
-										<h2 class="animate__animated animate__fadeInUp animate__delay-1s">
-												A <span class="typing-text"></span>
-										</h2>
-										<p class="animate__animated animate__fadeInUp animate__delay-2s">
-												Final year Software Engineering student passionate about creating scalable web applications. 
-												Experienced in modern full-stack development with a focus on clean code and user experience.
-										</p>
-										<div class="hero-buttons animate__animated animate__fadeInUp animate__delay-3s">
-												<a href="#tech-stack" class="btn-primary">
-														<i class="fas fa-code"></i>
-														View Tech Stack
-												</a>
-												<a href="#contact" class="btn-secondary">
-														<i class="fas fa-rocket"></i>
-														Start a Project
-												</a>
-												<a href="https://github.com/sworupkhadka" class="btn-outline" target="_blank">
-														<i class="fab fa-github"></i>
-														Explore GitHub
-												</a>
-										</div>
-								</div>
-								
-								<div class="hero-stats">
-										<div class="stat-card">
-												<div class="stat-icon">
-														<i class="fas fa-code-branch"></i>
-												</div>
-												<div class="stat-content">
-														<div class="stat-number" data-count="15">0</div>
-														<div class="stat-label">Technologies</div>
-												</div>
-										</div>
-										<div class="stat-card">
-												<div class="stat-icon">
-														<i class="fas fa-project-diagram"></i>
-												</div>
-												<div class="stat-content">
-														<div class="stat-number" data-count="20">0</div>
-														<div class="stat-label">Projects</div>
-												</div>
-										</div>
-										<div class="stat-card">
-												<div class="stat-icon">
-														<i class="fas fa-certificate"></i>
-												</div>
-												<div class="stat-content">
-														<div class="stat-number" data-count="6">0</div>
-														<div class="stat-label">Certifications</div>
-												</div>
-										</div>
-										<div class="stat-card">
-												<div class="stat-icon">
-														<i class="fas fa-graduation-cap"></i>
-												</div>
-												<div class="stat-content">
-														<div class="stat-number" data-count="4">0</div>
-														<div class="stat-label">Years Experience</div>
-												</div>
-										</div>
-								</div>
+				<div class="about-content">
+					<div class="about-intro">
+						<p>
+							I'm a final-year Software Engineering student at Gandaki College of
+							Engineering and Science, and this site itself is a record of that —
+							it started as my very first project, and I've kept coming back to
+							rebuild pieces of it as I've learned more.
+						</p>
+						<p>
+							Most of my work has been full-stack: wiring up a frontend, writing
+							the API underneath it, and getting the data layer right in between.
+							I like the parts of engineering that are more craft than checklist —
+							naming things well, keeping a codebase easy to come back to,
+							and shipping something that actually works end to end.
+						</p>
+					</div>
+
+					<div class="personal-info">
+						<h3>Details</h3>
+						<div class="info-grid">
+							<div class="info-item">
+								<span class="label">Name</span>
+								<span class="value">Sworup Khadka</span>
+							</div>
+							<div class="info-item">
+								<span class="label">Based in</span>
+								<span class="value">Pokhara, Nepal</span>
+							</div>
+							<div class="info-item">
+								<span class="label">Studying</span>
+								<span class="value">BSc. Software Engineering</span>
+							</div>
+							<div class="info-item">
+								<span class="label">Graduating</span>
+								<span class="value">April 2026</span>
+							</div>
+							<div class="info-item">
+								<span class="label">Role</span>
+								<span class="value">Full Stack Developer</span>
+							</div>
+							<div class="info-item">
+								<span class="label">Email</span>
+								<span class="value">sworupkhadka1323@gmail.com</span>
+							</div>
 						</div>
-						
-						<div class="scroll-indicator">
-								<div class="mouse">
-										<div class="wheel"></div>
-								</div>
-								<span>Scroll Down</span>
+					</div>
+
+					<div class="github-projects-cta">
+						<div class="cta-content">
+							<i class="fab fa-github"></i>
+							<div>
+								<h4>Code over claims</h4>
+								<p>The projects tell it better than this page can — take a look on GitHub.</p>
+							</div>
 						</div>
-				</section>
-
-				<!-- About Section -->
-				<section class="about" id="about">
-						<div class="container">
-								<div class="section-header">
-										<span class="section-subtitle">Get to know me</span>
-										<h2 class="section-title">About <span>Me</span></h2>
-										<div class="section-line"></div>
-								</div>
-
-								<div class="about-grid">
-										<div class="about-image">
-												<div class="image-frame">
-														<img src="./images/about.jpg" alt="About Sworup" loading="lazy">
-														<div class="image-overlay">
-																<div class="overlay-content">
-																		<h3>Sworup Khadka</h3>
-																		<p>Software Engineering Student</p>
-																		<div class="contact-icons">
-																				<a href="mailto:sworupkhadka1323@gmail.com" class="contact-icon">
-																						<i class="fas fa-envelope"></i>
-																				</a>
-																				<a href="https://github.com/sworupkhadka" class="contact-icon" target="_blank">
-																						<i class="fab fa-github"></i>
-																				</a>
-																				<a href="https://www.linkedin.com/in/sworup-khadka-1b204326b/" class="contact-icon" target="_blank">
-																						<i class="fab fa-linkedin"></i>
-																				</a>
-																		</div>
-																</div>
-														</div>
-												</div>
-										</div>
-
-										<div class="about-content">
-												<div class="about-intro">
-														<h3>Final Year Software Engineering Student & Full Stack Developer</h3>
-														<p>
-																I'm a passionate final-year Software Engineering student at Gandaki College of Engineering and Science 
-																with extensive experience in full-stack web development. I specialize in building responsive, 
-																scalable applications using modern technologies.
-														</p>
-														<p>
-																With hands-on experience in Full Stack Development, I enjoy solving complex problems 
-																and creating efficient solutions. My approach combines technical expertise with creative thinking 
-																to deliver exceptional digital experiences.
-														</p>
-												</div>
-												
-												<div class="personal-info">
-														<h4>Personal Information</h4>
-														<div class="info-grid">
-																<div class="info-item">
-																		<i class="fas fa-user"></i>
-																		<div>
-																				<span class="label">Full Name</span>
-																				<span class="value">Sworup Khadka</span>
-																		</div>
-																</div>
-																<div class="info-item">
-																		<i class="fas fa-calendar-alt"></i>
-																		<div>
-																				<span class="label">Age</span>
-																				<span class="value">22 Years</span>
-																		</div>
-																</div>
-																<div class="info-item">
-																		<i class="fas fa-map-marker-alt"></i>
-																		<div>
-																				<span class="label">Location</span>
-																				<span class="value">Pokhara, Nepal</span>
-																		</div>
-																</div>
-																<div class="info-item">
-																		<i class="fas fa-envelope"></i>
-																		<div>
-																				<span class="label">Email</span>
-																				<span class="value">sworupkhadka1323@gmail.com</span>
-																		</div>
-																</div>
-																<div class="info-item">
-																		<i class="fas fa-graduation-cap"></i>
-																		<div>
-																				<span class="label">Education</span>
-																				<span class="value">BSc. Software Engineering</span>
-																		</div>
-																</div>
-																<div class="info-item">
-																		<i class="fas fa-briefcase"></i>
-																		<div>
-																				<span class="label">Role</span>
-																				<span class="value">Full Stack Developer</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-
-												<div class="github-projects-cta">
-														<div class="cta-content">
-																<i class="fab fa-github"></i>
-																<div>
-																		<h4>Explore My Projects</h4>
-																		<p>Check out my GitHub for practical implementations and real-world projects.</p>
-																</div>
-														</div>
-														<a href="https://github.com/" class="btn-primary" target="_blank">
-																<i class="fab fa-github"></i>
-																View GitHub
-														</a>
-												</div>
-										</div>
-								</div>
-						</div>
-				</section>
-
-				<!-- Tech Stack Section -->
-				<section class="tech-stack" id="tech-stack">
-						<div class="container">
-								<div class="section-header">
-										<span class="section-subtitle">Technologies I work with</span>
-										<h2 class="section-title">Full Stack <span>Tech Stack</span></h2>
-										<div class="section-line"></div>
-										<p class="section-description">Modern technologies for building scalable web applications</p>
-								</div>
-
-								<div class="tech-categories">
-										<!-- Frontend Development -->
-										<div class="tech-category">
-												<div class="category-header">
-														<i class="fas fa-desktop"></i>
-														<h3>Frontend Development</h3>
-												</div>
-												<div class="tech-grid">
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-html5"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>HTML5</h4>
-																		<p>Semantic markup, Accessibility, Modern web standards</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-css3-alt"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>CSS3</h4>
-																		<p>Flexbox, Grid, Animations, Responsive design</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-js"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>JavaScript (ES6+)</h4>
-																		<p>Modern JS, DOM manipulation, Async programming</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-react"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>React.js</h4>
-																		<p>Hooks, Context API, Redux, Component architecture</p>
-																</div>
-														</div>
-												</div>
-										</div>
-
-										<!-- Backend Development -->
-										<div class="tech-category">
-												<div class="category-header">
-														<i class="fas fa-server"></i>
-														<h3>Backend Development</h3>
-												</div>
-												<div class="tech-grid">
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-node-js"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>Node.js</h4>
-																		<p>Server-side JavaScript, NPM ecosystem</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fas fa-bolt"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>Express.js</h4>
-																		<p>Web framework, Middleware, Routing</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-python"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>Python</h4>
-																		<p>Scripting, Backend development, Automation</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-java"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>Java</h4>
-																		<p>Object-oriented programming, Enterprise applications</p>
-																</div>
-														</div>
-												</div>
-										</div>
-
-										<!-- Databases -->
-										<div class="tech-category">
-												<div class="category-header">
-														<i class="fas fa-database"></i>
-														<h3>Databases</h3>
-												</div>
-												<div class="tech-grid">
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fas fa-database"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>MySQL</h4>
-																		<p>Relational database, Query optimization</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fas fa-database"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>PostgreSQL</h4>
-																		<p>Advanced SQL, Transactions, ACID compliance</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fas fa-database"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>MongoDB</h4>
-																		<p>NoSQL, Document database, Aggregation</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fas fa-code"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>RESTful APIs</h4>
-																		<p>API design, Integration, Documentation</p>
-																</div>
-														</div>
-												</div>
-										</div>
-
-										<!-- Tools & Others -->
-										<div class="tech-category">
-												<div class="category-header">
-														<i class="fas fa-tools"></i>
-														<h3>Tools & Others</h3>
-												</div>
-												<div class="tech-grid">
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-git-alt"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>Git & GitHub</h4>
-																		<p>Version control, Collaboration, CI/CD</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fas fa-terminal"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>Bash/Shell Scripting</h4>
-																		<p>Automation, System administration</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-bootstrap"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>Bootstrap</h4>
-																		<p>Responsive framework, Components</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fas fa-wind"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>Tailwind CSS</h4>
-																		<p>Utility-first CSS framework</p>
-																</div>
-														</div>
-												</div>
-										</div>
-
-										<!-- Additional Technologies -->
-										<div class="tech-category">
-												<div class="category-header">
-														<i class="fas fa-plug"></i>
-														<h3>Additional Technologies</h3>
-												</div>
-												<div class="tech-grid">
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fas fa-exchange-alt"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>Socket.io</h4>
-																		<p>Real-time communication, WebSockets</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-php"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>PHP</h4>
-																		<p>Server-side scripting, Laravel framework</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fab fa-gitlab"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>GitLab</h4>
-																		<p>DevOps, CI/CD pipelines</p>
-																</div>
-														</div>
-														<div class="tech-item">
-																<div class="tech-icon">
-																		<i class="fas fa-code"></i>
-																</div>
-																<div class="tech-info">
-																		<h4>VS Code</h4>
-																		<p>Development environment, Extensions</p>
-																</div>
-														</div>
-												</div>
-										</div>
-								</div>
-
-								<div class="tech-summary">
-										<div class="summary-content">
-												<i class="fas fa-lightbulb"></i>
-												<div>
-														<h3>Full Stack Expertise</h3>
-														<p>Proficient in building complete web applications from frontend to backend, with experience in modern frameworks, databases, and deployment strategies.</p>
-												</div>
-										</div>
-								</div>
-						</div>
-				</section>
-
-				<!-- Education Section -->
-				<section class="education" id="education">
-						<div class="container">
-								<div class="section-header">
-										<span class="section-subtitle">Academic journey</span>
-										<h2 class="section-title">Education <span>Timeline</span></h2>
-										<div class="section-line"></div>
-								</div>
-
-								<div class="education-grid">
-										<!-- GCES -->
-										<div class="education-card main">
-												<div class="edu-header">
-														<div class="edu-logo">
-																<img src="./images/gces.png" alt="GCES" loading="lazy">
-														</div>
-														<div class="edu-info">
-																<h3>Gandaki College of Engineering and Science</h3>
-																<p class="degree">Bachelor of Science in Software Engineering</p>
-																<p class="duration">2021 - April,2026  (Expected Graduation)</p>
-																<p class="location">Pokhara, Nepal</p>
-																<p class="status">Final Year Student</p>
-														</div>
-												</div>
-												
-												<div class="major-subjects">
-														<h4>Major Subjects Covered</h4>
-														<div class="subjects-grid">
-																<div class="subject-category">
-																		<h5><i class="fas fa-code"></i> Programming & Development</h5>
-																		<div class="subject-list">
-																				<span>Programming in C</span>
-																				<span>Object Oriented Programming in C++</span>
-																				<span>Programming in Java</span>
-																				<span>Data Structures & Algorithms</span>
-																				<span>Analysis & Design of Algorithms</span>
-																				<span>System Programming</span>
-																				<span>Web Technology</span>
-																		</div>
-																</div>
-																
-																<div class="subject-category">
-																		<h5><i class="fas fa-cogs"></i> Software Engineering</h5>
-																		<div class="subject-list">
-																				<span>Software Engineering Fundamentals</span>
-																				<span>Object Oriented Design & UML</span>
-																				<span>Software Testing, Verification & Quality Assurance</span>
-																				<span>Software Project Management</span>
-																				<span>Distributed Systems</span>
-																				<span>Real Time Systems</span>
-																		</div>
-																</div>
-																
-																<div class="subject-category">
-																		<h5><i class="fas fa-microchip"></i> Computer Systems</h5>
-																		<div class="subject-list">
-																				<span>Logic Circuits</span>
-																				<span>Microprocessor & Assembly Language</span>
-																				<span>Computer Organization & Architecture</span>
-																				<span>Computer Networks</span>
-																				<span>Network Programming</span>
-																		</div>
-																</div>
-																
-																<div class="subject-category">
-																		<h5><i class="fas fa-brain"></i> Advanced Computing</h5>
-																		<div class="subject-list">
-																				<span>Database Management Systems</span>
-																				<span>Artificial Intelligence & Neural Networks</span>
-																				<span>Image Processing & Pattern Recognition</span>
-																				<span>Computer Graphics</span>
-																				<span>Simulation & Modeling</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-										</div>
-
-										<!-- Kathmandu World School -->
-										<div class="education-card">
-												<div class="edu-header">
-														<div class="edu-logo">
-																<img src="./images/kws.png" alt="KWS" loading="lazy">
-														</div>
-														<div class="edu-info">
-																<h3>Kathmandu World School</h3>
-																<p class="degree">+2 in Science (Physics, Chemistry, Mathematics, Computer)</p>
-																<p class="duration">2018 - 2020</p>
-																<p class="location">Bhaktapur, Nepal</p>
-																<div class="achievements">
-																		<span><i class="fas fa-award"></i> GPA: 3.57</span>
-																		<span><i class="fas fa-award"></i> Top 10% in Final Examinations</span>
-																</div>
-														</div>
-												</div>
-										</div>
-
-										<!-- Shishu Niketan -->
-										<div class="education-card">
-												<div class="edu-header">
-														<div class="edu-logo">
-																<img src="./images/sns.jpg" alt="Shishu Niketan" loading="lazy">
-														</div>
-														<div class="edu-info">
-																<h3>Shishu Niketan Higher Secondary School</h3>
-																<p class="degree">Secondary Education Examination (SEE)</p>
-																<p class="duration">2016 - 2018</p>
-																<p class="location">Pokhara, Nepal</p>
-																<div class="achievements">
-																		<span><i class="fas fa-award"></i> GPA: 3.40/4.0</span>
-																		<span><i class="fas fa-award"></i> Excellence in Science, Social Studies, Computer</span>
-																</div>
-														</div>
-												</div>
-										</div>
-
-										<!-- Sainik Awasiya -->
-										<div class="education-card">
-												<div class="edu-header">
-														<div class="edu-logo">
-																<img src="./images/sam.jpg" alt="Sainik" loading="lazy">
-														</div>
-														<div class="edu-info">
-																<h3>Sainik Awasiya Mahavidyalaya Pokhara
-																</h3>
-																<p class="degree">Basic Level Examination</p>
-																<p class="duration">2012 - 2016</p>
-																<p class="location">Pokhara, Nepal</p>
-																<div class="achievements">
-																		<span><i class="fas fa-award"></i> Percentage: 82%</span>
-																		<span><i class="fas fa-award"></i> Excellence in Science, Computer</span>
-																</div>
-														</div>
-												</div>
-										</div>
-								</div>
-						</div>
-				</section>
-
-				<!-- Certifications Section -->
-				<section class="certifications" id="certifications">
-						<div class="container">
-								<div class="section-header">
-										<span class="section-subtitle">Professional credentials</span>
-										<h2 class="section-title">Certifications <span>& Training</span></h2>
-										<div class="section-line"></div>
-										<p class="section-description">Industry-recognized certifications and specialized training</p>
-								</div>
-
-								<div class="certifications-grid">
-										<div class="certification-card">
-												<div class="cert-icon">
-														<i class="fab fa-react"></i>
-												</div>
-												<div class="cert-content">
-														<h3>React Frontend Developer</h3>
-														<p class="date">2023</p>
-														<p class="description">Professional certification in modern React development with hooks, context API, and Redux.</p>
-												</div>
-										</div>
-
-										<div class="certification-card">
-												<div class="cert-icon">
-														<i class="fab fa-node-js"></i>
-												</div>
-												<div class="cert-content">
-														<h3>Backend Development with Node.js</h3>
-														<p class="date">2023</p>
-														<p class="description">Building scalable server-side applications using Node.js, Express, and MongoDB.</p>
-												</div>
-										</div>
-
-										<div class="certification-card">
-												<div class="cert-icon">
-														<i class="fas fa-database"></i>
-												</div>
-												<div class="cert-content">
-														<h3>Database Management</h3>
-														<p class="date">2022</p>
-														<p class="description">SQL mastery, database design, and optimization for MySQL and PostgreSQL.</p>
-												</div>
-										</div>
-
-										<div class="certification-card">
-												<div class="cert-icon">
-														<i class="fab fa-python"></i>
-												</div>
-												<div class="cert-content">
-														<h3>Python for Data Science</h3>
-														<p class="date">2022</p>
-														<p class="description">Data analysis, visualization, and machine learning using Python libraries.</p>
-												</div>
-										</div>
-
-										<div class="certification-card">
-												<div class="cert-icon">
-														<i class="fas fa-code"></i>
-												</div>
-												<div class="cert-content">
-														<h3>Full Stack Web Development</h3>
-														<p class="issuer">freeCodeCamp</p>
-														<p class="date">2021</p>
-														<p class="description">Comprehensive certification covering HTML, CSS, JavaScript, and backend technologies.</p>
-												</div>
-										</div>
-
-										<div class="certification-card">
-												<div class="cert-icon">
-														<i class="fab fa-aws"></i>
-												</div>
-												<div class="cert-content">
-														<h3>AWS Cloud Practitioner</h3>
-														<p class="issuer">Amazon Web Services</p>
-														<p class="date">2023</p>
-														<p class="description">Foundational understanding of AWS cloud services and deployment strategies.</p>
-												</div>
-										</div>
-								</div>
-
-								<div class="ongoing-learning">
-										<div class="learning-content">
-												<i class="fas fa-book-open"></i>
-												<div>
-														<h3>Currently Learning</h3>
-														<p>Docker & Kubernetes for containerization, Advanced System Design, Angular and Cloud Architecture patterns.</p>
-												</div>
-										</div>
-								</div>
-						</div>
-				</section>
-
-				<!-- Contact Section -->
-				<section class="contact" id="contact">
-						<div class="container">
-								<div class="section-header">
-										<span class="section-subtitle">Get in touch</span>
-										<h2 class="section-title">Contact <span>Me</span></h2>
-										<div class="section-line"></div>
-								</div>
-
-								<div class="contact-content">
-										<div class="contact-intro">
-												<h3>Let's Build Something Amazing Together</h3>
-												<p>I'm currently available for full-time opportunities, internships, and freelance projects. Let's discuss how we can work together!</p>
-										</div>
-
-										<div class="contact-grid">
-												<div class="contact-info">
-														<div class="contact-card">
-																<div class="contact-icon">
-																		<i class="fas fa-envelope"></i>
-																</div>
-																<div class="contact-details">
-																		<h4>Email Address</h4>
-																		<p>sworupkhadka1323@gmail.com</p>
-																		<a href="mailto:sworupkhadka1323@gmail.com" class="contact-link">
-																				Send Email
-																				<i class="fas fa-arrow-right"></i>
-																		</a>
-																</div>
-														</div>
-
-														<div class="contact-card">
-																<div class="contact-icon">
-																		<i class="fas fa-map-marker-alt"></i>
-																</div>
-																<div class="contact-details">
-																		<h4>Location</h4>
-																		<p>Kajipokari-14, Pokhara</p>
-																		<p>Gandaki Province, Nepal</p>
-																		<a href="https://maps.google.com/?q=Pokhara+Nepal" target="_blank" class="contact-link">
-																				View on Map
-																				<i class="fas fa-arrow-right"></i>
-																		</a>
-																</div>
-														</div>
-
-														<div class="contact-card">
-																<div class="contact-icon">
-																		<i class="fas fa-briefcase"></i>
-																</div>
-																<div class="contact-details">
-																		<h4>Availability</h4>
-																		<p>Open to full-time, internships, and freelance projects</p>
-																		<a href="#contact-form" class="contact-link">
-																				Discuss Opportunity
-																				<i class="fas fa-arrow-right"></i>
-																		</a>
-																</div>
-														</div>
-												</div>
-
-												<div class="contact-form-container">
-														<form id="contact-form" class="contact-form">
-																<div class="form-group">
-																		<input type="text" id="name" name="name" required placeholder=" ">
-																		<label for="name">Your Name</label>
-																</div>
-																<div class="form-group">
-																		<input type="email" id="email" name="email" required placeholder=" ">
-																		<label for="email">Email Address</label>
-																</div>
-																<div class="form-group">
-																		<input type="text" id="subject" name="subject" required placeholder=" ">
-																		<label for="subject">Subject</label>
-																</div>
-																<div class="form-group">
-																		<textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
-																		<label for="message">Your Message</label>
-																</div>
-																<button type="submit" class="btn-primary">
-																		<i class="fas fa-paper-plane"></i>
-																		Send Message
-																</button>
-														</form>
-												</div>
-										</div>
-
-										<div class="social-connect">
-												<h4>Connect with me on social media</h4>
-												<div class="social-icons">
-														<a href="https://www.facebook.com/sworup.khadka/" class="social-icon" target="_blank">
-																<i class="fab fa-facebook-f"></i>
-														</a>
-														<a href="https://www.instagram.com/khadka_sworup/" class="social-icon" target="_blank">
-																<i class="fab fa-instagram"></i>
-														</a>
-														<a href="https://github.com/sworupkhadka" class="social-icon" target="_blank">
-																<i class="fab fa-github"></i>
-														</a>
-														<a href="https://www.linkedin.com/in/sworup-khadka-1b204326b/" class="social-icon" target="_blank">
-																<i class="fab fa-linkedin-in"></i>
-														</a>
-												</div>
-										</div>
-								</div>
-						</div>
-				</section>
-		</main>
-
-		<footer>
-				<div class="container">
-						<div class="footer-content">
-								<div class="footer-brand">
-										<div class="logo">
-												<i class="fas fa-code"></i>
-												<div>
-														<h3>Sworup Khadka</h3>
-														<p>Full Stack Developer</p>
-												</div>
-										</div>
-										<p class="footer-description">
-												Passionate about creating elegant solutions with modern technologies. 
-												Final year Software Engineering student ready to build the future.
-										</p>
-								</div>
-
-								<div class="footer-links">
-										<div class="link-group">
-												<h4>Quick Links</h4>
-												<a href="#home">Home</a>
-												<a href="#about">About</a>
-												<a href="#tech-stack">Tech Stack</a>
-												<a href="#education">Education</a>
-										</div>
-										<div class="link-group">
-												<h4>Resources</h4>
-												<a href="#certifications">Certifications</a>
-												<a href="https://github.com/" target="_blank">GitHub</a>
-												<a href="#contact">Contact</a>
-										</div>
-								</div>
-
-								<div class="footer-cta">
-										<h4>Looking for a Developer?</h4>
-										<p>Let's work together on your next project</p>
-										<a href="#contact" class="btn-secondary">
-												<i class="fas fa-rocket"></i>
-												Start a Project
-										</a>
-								</div>
-						</div>
-
-						<div class="footer-bottom">
-								<div class="copyright">
-										<p>&copy; 2025 Sworup Khadka. All rights reserved.</p>
-								</div>
-								<div class="footer-social">
-										<a href="https://www.facebook.com/sworup.khadka/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-										<a href="https://twitter.com/sworupkhadka3" target="_blank"><i class="fab fa-twitter"></i></a>
-										<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-										<a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-										<a href="mailto:sworupkhadka1323@gmail.com"><i class="fas fa-envelope"></i></a>
-								</div>
-						</div>
+						<a href="https://github.com/sworupkhadka" class="btn-outline" target="_blank">
+							View GitHub
+						</a>
+					</div>
 				</div>
-		</footer>
+			</div>
+		</div>
+	</section>
 
-		<!-- Scripts -->
-		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-		<script src="script.js"></script>
-		</body>
-		</html>
+	<!-- Tech Stack Section -->
+	<section class="tech-stack" id="tech-stack">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">03 — Stack</span>
+				<h2 class="section-title">What I build with</h2>
+				<p class="section-description">Grouped by where it sits in the stack, not by how impressive it sounds.</p>
+			</div>
+
+			<div class="tech-categories">
+				<div class="tech-category">
+					<h3><span class="cat-mark">Frontend</span></h3>
+					<ul class="tech-list">
+						<li><span class="tech-name">HTML5 &amp; CSS3</span><span class="tech-note">Semantic markup, Grid &amp; Flexbox, responsive layout</span></li>
+						<li><span class="tech-name">JavaScript (ES6+)</span><span class="tech-note">DOM, async/await, module patterns</span></li>
+						<li><span class="tech-name">React</span><span class="tech-note">Hooks, Context API, component architecture</span></li>
+						<li><span class="tech-name">Tailwind &amp; Bootstrap</span><span class="tech-note">Utility-first and component-based styling</span></li>
+					</ul>
+				</div>
+
+				<div class="tech-category">
+					<h3><span class="cat-mark">Backend</span></h3>
+					<ul class="tech-list">
+						<li><span class="tech-name">Node.js &amp; Express</span><span class="tech-note">REST APIs, middleware, routing</span></li>
+						<li><span class="tech-name">Python</span><span class="tech-note">Scripting and backend services</span></li>
+						<li><span class="tech-name">PHP</span><span class="tech-note">Server-side scripting, Laravel</span></li>
+						<li><span class="tech-name">Socket.io</span><span class="tech-note">Real-time, WebSocket-based features</span></li>
+					</ul>
+				</div>
+
+				<div class="tech-category">
+					<h3><span class="cat-mark">Data</span></h3>
+					<ul class="tech-list">
+						<li><span class="tech-name">PostgreSQL &amp; MySQL</span><span class="tech-note">Schema design, query optimisation</span></li>
+						<li><span class="tech-name">MongoDB</span><span class="tech-note">Document modelling, aggregation</span></li>
+						<li><span class="tech-name">RESTful API design</span><span class="tech-note">Versioning, auth, documentation</span></li>
+					</ul>
+				</div>
+
+				<div class="tech-category">
+					<h3><span class="cat-mark">Tooling</span></h3>
+					<ul class="tech-list">
+						<li><span class="tech-name">Git &amp; GitHub</span><span class="tech-note">Branching, code review, CI/CD</span></li>
+						<li><span class="tech-name">Bash</span><span class="tech-note">Automation, environment setup</span></li>
+						<li><span class="tech-name">VS Code</span><span class="tech-note">Day-to-day editor</span></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="tech-summary">
+				<p><strong>Currently learning:</strong> Docker &amp; Kubernetes, system design, Angular, and cloud architecture patterns.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Education Section -->
+	<section class="education" id="education">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">04 — Education</span>
+				<h2 class="section-title">Where I've studied</h2>
+			</div>
+
+			<div class="education-grid">
+				<div class="education-card main">
+					<div class="edu-header">
+						<div class="edu-logo">
+							<img src="./images/gces.png" alt="GCES" loading="lazy">
+						</div>
+						<div class="edu-info">
+							<h3>Gandaki College of Engineering and Science</h3>
+							<p class="degree">BSc. Software Engineering</p>
+							<p class="duration">2021 – April 2026 (expected)</p>
+							<p class="location">Pokhara, Nepal</p>
+							<p class="status">Final year</p>
+						</div>
+					</div>
+
+					<div class="major-subjects">
+						<h4>Coursework</h4>
+						<div class="subjects-grid">
+							<div class="subject-category">
+								<h5>Programming &amp; Development</h5>
+								<div class="subject-list">
+									<span>Programming in C &amp; C++ (OOP)</span>
+									<span>Programming in Java</span>
+									<span>Data Structures &amp; Algorithms</span>
+									<span>Analysis &amp; Design of Algorithms</span>
+									<span>System Programming</span>
+									<span>Web Technology</span>
+								</div>
+							</div>
+
+							<div class="subject-category">
+								<h5>Software Engineering</h5>
+								<div class="subject-list">
+									<span>Software Engineering Fundamentals</span>
+									<span>OO Design &amp; UML</span>
+									<span>Testing, Verification &amp; QA</span>
+									<span>Software Project Management</span>
+									<span>Distributed Systems</span>
+									<span>Real-Time Systems</span>
+								</div>
+							</div>
+
+							<div class="subject-category">
+								<h5>Computer Systems</h5>
+								<div class="subject-list">
+									<span>Logic Circuits</span>
+									<span>Microprocessor &amp; Assembly</span>
+									<span>Computer Organization &amp; Architecture</span>
+									<span>Computer Networks</span>
+									<span>Network Programming</span>
+								</div>
+							</div>
+
+							<div class="subject-category">
+								<h5>Advanced Computing</h5>
+								<div class="subject-list">
+									<span>Database Management Systems</span>
+									<span>AI &amp; Neural Networks</span>
+									<span>Image Processing &amp; Pattern Recognition</span>
+									<span>Computer Graphics</span>
+									<span>Simulation &amp; Modeling</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="education-card">
+					<div class="edu-header">
+						<div class="edu-logo">
+							<img src="./images/kws.png" alt="Kathmandu World School" loading="lazy">
+						</div>
+						<div class="edu-info">
+							<h3>Kathmandu World School</h3>
+							<p class="degree">+2 Science — Physics, Chemistry, Maths, Computer</p>
+							<p class="duration">2018 – 2020</p>
+							<p class="location">Bhaktapur, Nepal</p>
+							<div class="achievements">
+								<span>GPA 3.57</span>
+								<span>Top 10% of final examinations</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="education-card">
+					<div class="edu-header">
+						<div class="edu-logo">
+							<img src="./images/sns.jpg" alt="Shishu Niketan" loading="lazy">
+						</div>
+						<div class="edu-info">
+							<h3>Shishu Niketan Higher Secondary School</h3>
+							<p class="degree">Secondary Education Examination (SEE)</p>
+							<p class="duration">2016 – 2018</p>
+							<p class="location">Pokhara, Nepal</p>
+							<div class="achievements">
+								<span>GPA 3.40 / 4.0</span>
+								<span>Excellence — Science, Social Studies, Computer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="education-card">
+					<div class="edu-header">
+						<div class="edu-logo">
+							<img src="./images/sam.jpg" alt="Sainik Awasiya Mahavidyalaya" loading="lazy">
+						</div>
+						<div class="edu-info">
+							<h3>Sainik Awasiya Mahavidyalaya, Pokhara</h3>
+							<p class="degree">Basic Level Examination</p>
+							<p class="duration">2012 – 2016</p>
+							<p class="location">Pokhara, Nepal</p>
+							<div class="achievements">
+								<span>82%</span>
+								<span>Excellence — Science, Computer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Certifications Section -->
+	<section class="certifications" id="certifications">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">05 — Certifications</span>
+				<h2 class="section-title">Certifications &amp; training</h2>
+			</div>
+
+			<div class="certifications-grid">
+				<div class="certification-card">
+					<h3>React Frontend Developer</h3>
+					<p class="date">2023</p>
+					<p class="description">Modern React — hooks, Context API, and Redux.</p>
+				</div>
+
+				<div class="certification-card">
+					<h3>Backend Development with Node.js</h3>
+					<p class="date">2023</p>
+					<p class="description">Server-side apps with Node.js, Express, and MongoDB.</p>
+				</div>
+
+				<div class="certification-card">
+					<h3>Database Management</h3>
+					<p class="date">2022</p>
+					<p class="description">SQL, database design, and optimisation for MySQL and PostgreSQL.</p>
+				</div>
+
+				<div class="certification-card">
+					<h3>Python for Data Science</h3>
+					<p class="date">2022</p>
+					<p class="description">Data analysis and visualisation with Python libraries.</p>
+				</div>
+
+				<div class="certification-card">
+					<h3>Full Stack Web Development</h3>
+					<p class="issuer">freeCodeCamp</p>
+					<p class="date">2021</p>
+					<p class="description">HTML, CSS, JavaScript, and backend fundamentals.</p>
+				</div>
+
+				<div class="certification-card">
+					<h3>AWS Cloud Practitioner</h3>
+					<p class="issuer">Amazon Web Services</p>
+					<p class="date">2023</p>
+					<p class="description">Foundations of AWS services and deployment.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">06 — Contact</span>
+				<h2 class="section-title">Get in touch</h2>
+				<p class="section-description">Open to full-time roles, internships, and freelance work — send me a message.</p>
+			</div>
+
+			<div class="contact-grid">
+				<div class="contact-info">
+					<div class="contact-card">
+						<i class="fas fa-envelope"></i>
+						<div class="contact-details">
+							<h4>Email</h4>
+							<p>sworupkhadka1323@gmail.com</p>
+							<a href="mailto:sworupkhadka1323@gmail.com" class="contact-link">Send an email →</a>
+						</div>
+					</div>
+
+					<div class="contact-card">
+						<i class="fas fa-location-dot"></i>
+						<div class="contact-details">
+							<h4>Location</h4>
+							<p>Kaji Pokhari-14, Pokhara<br>Gandaki Province, Nepal</p>
+							<a href="https://maps.google.com/?q=Pokhara+Nepal" target="_blank" class="contact-link">View on map →</a>
+						</div>
+					</div>
+
+					<div class="contact-card">
+						<i class="fas fa-briefcase"></i>
+						<div class="contact-details">
+							<h4>Availability</h4>
+							<p>Full-time, internships, and freelance projects</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="contact-form-container">
+					<form id="contact-form" class="contact-form">
+						<div class="form-group">
+							<input type="text" id="name" name="name" required placeholder=" ">
+							<label for="name">Your name</label>
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email" required placeholder=" ">
+							<label for="email">Email address</label>
+						</div>
+						<div class="form-group">
+							<input type="text" id="subject" name="subject" required placeholder=" ">
+							<label for="subject">Subject</label>
+						</div>
+						<div class="form-group">
+							<textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+							<label for="message">Message</label>
+						</div>
+						<button type="submit" class="btn-primary">
+							Send message
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<div class="container">
+		<div class="footer-content">
+			<div class="footer-brand">
+				<h3>Sworup Khadka</h3>
+				<p class="footer-description">Full-stack developer, final-year software engineering student, Pokhara, Nepal.</p>
+			</div>
+
+			<div class="footer-links">
+				<div class="link-group">
+					<h4>Site</h4>
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#tech-stack">Stack</a>
+					<a href="#education">Education</a>
+				</div>
+				<div class="link-group">
+					<h4>Elsewhere</h4>
+					<a href="#certifications">Certifications</a>
+					<a href="https://github.com/sworupkhadka" target="_blank">GitHub</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; 2026 Sworup Khadka.</p>
+			<div class="footer-social">
+				<a href="https://github.com/sworupkhadka" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/sworup-khadka-1b204326b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+				<a href="mailto:sworupkhadka1323@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
